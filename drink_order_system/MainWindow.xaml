@@ -1,0 +1,32 @@
+﻿<Window x:Class="drink_order_system.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:drink_order_system"
+        mc:Ignorable="d"
+        Title="飲料點餐系統" Height="450" Width="800">
+    <Grid Background="Black">
+
+        <StackPanel x:Name="stackpanel_DrinkMenu" Margin="20,65,0,0" Background="Black" Height="200" VerticalAlignment="Top" HorizontalAlignment="Left" Width="455" />
+
+        <Button x:Name="OrderButton" Content="確定訂購" Margin="0,25,30,0" VerticalAlignment="Top" Height="60" FontSize="18" FontWeight="Bold" HorizontalAlignment="Right" Width="100" Click="OrderButton_Click" 
+                Background="Black" BorderBrush="Lime" Foreground="Lime"/>
+
+        <TextBlock x:Name="ResultTextBlock" Margin="20,0,30,20" TextWrapping="Wrap" Background="Black" Height="220" VerticalAlignment="Bottom" Padding="5,5,5,5" FontSize="16" Foreground="Lime"/>
+        
+
+        <GroupBox Header="內用/外帶" Margin="20,0,0,0" Background="Black" Height="52" VerticalAlignment="Top" HorizontalAlignment="Left" Width="455" BorderBrush="Lime" Foreground="Lime">
+            
+            <StackPanel Orientation="Horizontal" Height="30">
+                <RadioButton Content="內用" FontSize="16" FontWeight="Bold" Height="25" Width="80" Margin="10,0,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                             Checked="RadioButton_Checked" Foreground="Lime"/>
+                
+                <RadioButton Content="外帶" FontSize="16" FontWeight="Bold" Height="25" Width="80" Margin="10,0,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                             Checked="RadioButton_Checked" Foreground="Lime"/>
+                
+            </StackPanel>
+        </GroupBox>
+
+    </Grid>
+</Window>
